@@ -8,7 +8,7 @@ My test task to 65apps
 
 ## 2 Задание
 Объясните почему блок "Work 2" не выполняется? 
-'''swift
+```swift
 let serialQueue = DispatchQueue(label: “com.foo.bar")
  serialQueue.async {
      print("Work 1”)
@@ -16,7 +16,7 @@ let serialQueue = DispatchQueue(label: “com.foo.bar")
          print("Work 2”)
      }
  }
- '''
+```
 
 ### **Ответ:**
 Данный код не может быть выполнен из-за deadlock, который подразумевает собой блокировку выполнения кода
